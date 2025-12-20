@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WAFAM Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        #messages {
+            border: 1px solid #ccc;
+            padding: 15px;
+            height: 400px;
+            overflow-y: auto;
+            margin-bottom: 15px;
+            background: #f9f9f9;
+        }
+        #messages p {
+            margin: 10px 0;
+        }
+        #messages a {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        #messages a:hover {
+            color: #004499;
+        }
+        #input {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .bot-message {
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0;
+        }
+        .user-message {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>WAFAM - Asystent Klienta</h1>
+    
+    <div id="messages">
+        <div class="bot-message"><b>Bot:</b> Cześć! Jestem asystentem firmy WAFAM. W czym mogę pomóc?</div>
+    </div>
+    
+    <input type="text" id="input" placeholder="Napisz wiadomość...">
+    <button onclick="send()">Wyślij</button>
+    <button onclick="clearChat()">Nowa rozmowa</button>
+
+    <script>
+        var sessionId = 'session_' + Math.random().toString(36).substr(2, 9);
+        
+        function convertLinks(text) {
+            var regex = /\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g;
+            return text.replace(regex, '<a href="$2" target="_blank">$1</a>');
+        }
+        
+        function send() {
+            var input = document.getElementById("input");
+            var text = input.value;
+            
+            if (text == "") {
+                alert("Wpisz coś!");
+                return;
+            }
+            
+            var messages = document.getElementById("messages");
+            messages.innerHTML += '<div class="user-message"><b>Ty:</b> ' + text + '</div>';
+            
+            input.value = "";
+            
+            fetch("http://127.0.0.1:8000/chat", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({
+                    text: text,
+                    session_id: sessionId
+                })
+            })
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                var botResponse = convertLinks(data.bot);
+                messages.innerHTML += '<div class="bot-message"><b>Bot:</b> ' + botResponse + '</div>';
+                messages.scrollTop = messages.scrollHeight;
+            });
+        }
+        
+        function clearChat() {
+            fetch("http://127.0.0.1:8000/clear?session_id=" + sessionId, {
+                method: "POST"
+            })
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                document.getElementById("messages").innerHTML = '<div class="bot-message"><b>Bot:</b> Cześć! Jestem asystentem firmy WAFAM. W czym mogę pomóc?</div>';
+                sessionId = 'session_' + Math.random().toString(36).substr(2, 9);
+            });
+        }
+        
+        document.getElementById("input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                send();
+            }
+        });
+    </script>
+</body>
+</html>
