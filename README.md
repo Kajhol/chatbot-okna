@@ -93,7 +93,7 @@ pip install fastapi uvicorn python-multipart openai python-dotenv
 
 ### Step 5: Create .env file
 Create file .env in window-sales-chatbot folder:
-OPENAI_API_KEY=your-api-key-here
+OPENAI_API_KEY=your-api-key-here  
 Get your API key from: https://platform.openai.com/api-keys
 
 ### Step 6: Run API server
@@ -112,9 +112,4 @@ Questions or code review? Find me here:
 
 ---
 
-<<<<<<< HEAD
-  *Star this repo to follow progress!*
->>>>>>> 23656e98e4065a1758d1960ee506775a0dbf731f
-=======
 *Star this repo to follow progress!*
->>>>>>> 548ab444eeffe872cfd304f1be7bd78501448504
