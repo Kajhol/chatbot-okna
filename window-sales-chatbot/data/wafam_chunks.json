@@ -1,0 +1,338 @@
+[
+  {
+    "id": "intro",
+    "title": "Wprowadzenie",
+    "content": "WAFAM — producent okien, rolet zewnętrznych, drzwi i bram garażowych",
+    "char_count": 68
+  },
+  {
+    "id": "firma",
+    "title": "O firmie",
+    "content": "O firmie\nWAFAM działa od ponad 20 lat. Zakład ma ok. 3000 m² i mieści się w Świętochłowicach (centrum Śląska). Firma obsługuje klientów indywidualnych oraz inwestycje.\n\nNasz zespół handlowców\nNasi handlowcy chętnie pomogą dobrać rozwiązanie i przeprowadzą Cię przez wycenę oraz pomiar. Najlepiej zadzwoń do dowolnej osoby z listy — każda pomoże.\n\nJak bot ma odpowiadać (ważne)\n- Odpowiadaj krótko: maksymalnie 2–3 zdania na raz.\n- Nie wypisuj wszystkiego naraz. Lepiej dopytać i poczekać na odpowiedź.\n- Bądź przyjazny i naturalny. Pisz jak człowiek, nie jak encyklopedia.\n- Na początku mów prostym językiem o korzyściach: ciepło, cisza, oszczędność, bezpieczeństwo.\n- Szczegóły techniczne (parametry, komory, współczynniki) podawaj tylko, gdy klient sam o nie pyta.\n- Jeśli klient pyta ogólnie — odpowiedz krótko. Jeśli pyta o szczegóły — rozwiń temat.\n- W odpowiedziach nie używaj pogrubień ani list punktowanych. Pisz normalnym tekstem.\n- Promuj firmę WAFAM pozytywnie, ale naturalnie.\n- Opieraj się tylko na informacji z tego pliku.\n- Jeśli czegoś nie ma w materiałach — powiedz krótko, że handlowiec chętnie to potwierdzi.\n- Nie powtarzaj tej samej odpowiedzi dwa razy. Jeśli klient pyta o to samo ponownie, odpowiedz inaczej — np. podaj konkretny numer do handlowca lub zaproponuj inny krok.\n- Jeśli nie znasz odpowiedzi i klient dopytuje — przeproś krótko, podaj konkretny kontakt do handlowca i zaproponuj że handlowiec sprawdzi dostępność.",
+    "char_count": 1448
+  },
+  {
+    "id": "kontakt",
+    "title": "Dane kontaktowe",
+    "content": "- Nie podawaj cen. Przy wycenie zbierz dane i zaproponuj kontakt.\n- Zadawaj maksymalnie 1–2 pytania naraz.\n- Kończ odpowiedź prostym pytaniem lub propozycją kolejnego kroku.\n- Pamiętaj kontekst rozmowy. Nie pytaj o rzeczy, które klient już podał.\n- Linki podawaj w formacie: [tekst do kliknięcia](adres url)\n\nDlaczego WAFAM (argumenty dla bota)",
+    "char_count": 344
+  },
+  {
+    "id": "firma",
+    "title": "O firmie",
+    "content": "- Ponad 20 lat doświadczenia na rynku.\n- Własna produkcja (zakład 3000 m²) — kontrola jakości na każdym etapie.",
+    "char_count": 111
+  },
+  {
+    "id": "montaz",
+    "title": "Montaż",
+    "content": "- Kompleksowa obsługa: doradztwo, pomiar, produkcja, transport, montaż.\n- Lokalizacja w centrum Śląska — wygodna obsługa klientów z regionu.",
+    "char_count": 140
+  },
+  {
+    "id": "doradztwo",
+    "title": "Doradztwo",
+    "content": "- Wsparcie informacyjne w programie Czyste Powietrze.\n\nCo bot powinien zebrać do wyceny\n- Produkt: okna / drzwi / rolety / żaluzje fasadowe / brama / system przesuwny (PSK, Smart-Slide, HST).\n- Miejscowość.\n- Ilość sztuk.\n- Przybliżone wymiary (albo informacja „standard/niestandard\").\n- Nowy budynek czy wymiana?",
+    "char_count": 313
+  },
+  {
+    "id": "kontakt",
+    "title": "Dane kontaktowe",
+    "content": "- Preferowany kontakt: telefon lub e-mail + zgoda na kontakt w sprawie oferty.",
+    "char_count": 78
+  },
+  {
+    "id": "kolory_rolety",
+    "title": "Kolory rolet",
+    "content": "Kolory i wykończenia (ważne dla bota)\nZasada: kolorystyka zależy od produktu i konfiguracji. Jeśli klient pyta „jakie macie kolory\", bot podaje kilka najpopularniejszych przykładów dla danego produktu i dopytuje, czego dotyczy zapytanie (okna, drzwi, rolety czy brama). Jeśli klient pyta o konkretny kolor, bot sprawdza go w listach poniżej:\n- jeśli kolor jest na liście: potwierdź, że jest dostępny i dopytaj o produkt + wymiary/miejscowość (żeby iść w stronę wyceny),\n- jeśli koloru nie ma na liście: powiedz krótko, że nie masz go w materiałach WAFAM i zaproponuj, że handlowiec sprawdzi dostępność lub wariant specjalny.",
+    "char_count": 624
+  },
+  {
+    "id": "parametry",
+    "title": "Parametry techniczne",
+    "content": "Uwaga dla klienta (do użycia przez bota, gdy rozmawiacie o kolorach rolet):\nKolory na wzornikach mogą różnić się od rzeczywistości. Dostępność kolorów zależy od typu profilu. Kolory oznaczone gwiazdką to kolory specjalne na zamówienie. Przy roletach jest też możliwość lakierowania na dowolny kolor RAL (na zamówienie).",
+    "char_count": 319
+  },
+  {
+    "id": "kolory_rolety",
+    "title": "Kolory rolet",
+    "content": "Baza kolorów — rolety (wzornik z materiałów WAFAM)\nKolory podstawowe i popularne: srebrny, biały, szary, beżowy, brązowy, biel kremowa, jasny szary, ultra biały, szary antracyt, ciemnobeżowy, ciemnobrązowy, czarny.\nDrewnopodobne i dekory: jasne drewno, ciemne drewno, mahoń, orzech, złoty dąb, wenge, winchester, szare aluminium.\nKolory specjalne (na zamówienie, oznaczane gwiazdką): bordo*, żółty*, kość słoniowa*, czerwony*, zieleń jodłowa*, stalowy niebieski*, bazaltowy szary*, kwarcowy szary*, betonowy szary*.\nDodatkowo: przy roletach na zamówienie możliwe jest lakierowanie na dowolny kolor RAL.",
+    "char_count": 602
+  },
+  {
+    "id": "kolory_rolety",
+    "title": "Kolory rolet",
+    "content": "Baza kolorów — drzwi (kolorystyka z materiałów WAFAM)",
+    "char_count": 53
+  },
+  {
+    "id": "kolory_rolety",
+    "title": "Kolory rolet",
+    "content": "Antracyt, biały, dąb sonoma, orzech ciemny, winchester, wenge, złoty dąb.\nDodatkowe dekory opisane w materiałach: antracyt drewnopodobny oraz winchester renolit (w materiałach zaznaczone jako dostępne tylko z ościeżnicą Termo ALU).",
+    "char_count": 231
+  },
+  {
+    "id": "bramy",
+    "title": "Bramy garażowe",
+    "content": "Baza kolorów — bramy garażowe (kolory paneli z materiałów WAFAM)\nWinchester, orzech, złoty dąb, antracyt strukturalny, antracyt deep mat, antracyt 7016, antracyt deep mat V2, antracyt light mat V2.\nW materiałach WAFAM jest też informacja o różnorodnej kolorystyce oraz możliwości lakierowania i okleinowania paneli według potrzeb klienta.",
+    "char_count": 338
+  },
+  {
+    "id": "kolory_okna",
+    "title": "Kolory okien",
+    "content": "Baza kolorów — okna (folia dekoracyjna / przykłady nazw z materiałów WAFAM)\nW materiałach WAFAM przy oknach jest informacja o szerokiej gamie folii dekoracyjnych. Przykładowe nazwy, które pojawiają się w materiałach: gray concrete, dąb szeffield szary, dąb szeffield jasny, brzoza, szary betonowy, czarny mat, winchester, ciemny czerwony, dąb naturalny, orzech, aluminium szczotkowane, złoty dąb, woodec concrete, szary antracytowy piaskowany, szary agatowy, srebrnoszary, jasnoszary.\nJeśli klient pyta o konkretną nazwę koloru (np. „niebieska laguna\") i nie ma jej na liście powyżej — bot nie zgaduje, tylko proponuje weryfikację u handlowca.\n\nDodatki okienne a kolor\nCiepła ramka Swisspacer: w materiałach jest informacja, że ramka może być dostarczona w 17 różnych kolorach (bez rozpisanej listy kolorów w tym pliku).",
+    "char_count": 820
+  },
+  {
+    "id": "zaluzje",
+    "title": "Żaluzje fasadowe",
+    "content": "Żaluzje fasadowe — kolory\nW materiałach WAFAM jest informacja, że żaluzje są dostępne w różnych kolorach i stylach, ale bez rozpisanej palety w tym pliku. Przy pytaniu o konkretny kolor bot kieruje do handlowca po potwierdzenie.\n\nProdukty",
+    "char_count": 238
+  },
+  {
+    "id": "kolory_okna",
+    "title": "Kolory okien",
+    "content": "1) Okna PCV\nOkna standardowe to solidne okna w dobrej cenie. Świetnie trzymają ciepło i zapewniają ciszę w domu.\nOkna premium mają lepsze parametry izolacyjne. Dla osób, którym zależy na maksymalnej ciszy i oszczędności na ogrzewaniu.",
+    "char_count": 234
+  },
+  {
+    "id": "okna_premium",
+    "title": "Okna premium",
+    "content": "Profile premium: Salamander bluEVOLUTION 82, DECCO 83",
+    "char_count": 53
+  },
+  {
+    "id": "systemy_przesuwne",
+    "title": "Systemy przesuwne",
+    "content": "- PSK: bardziej budżetowa alternatywa drzwi przesuwnych, oszczędność miejsca",
+    "char_count": 76
+  },
+  {
+    "id": "systemy_przesuwne",
+    "title": "Systemy przesuwne",
+    "content": "- Smart-Slide: nowoczesne rozwiązanie, estetyka, bardzo dobra izolacja cieplna",
+    "char_count": 78
+  },
+  {
+    "id": "systemy_przesuwne",
+    "title": "Systemy przesuwne",
+    "content": "- HST: wielkoformatowe przeszklenia, system bezprogowy, trend w nowoczesnej architekturze",
+    "char_count": 89
+  },
+  {
+    "id": "system_tarasowy",
+    "title": "System tarasowy",
+    "content": "System tarasowy\nDrzwi balkonowe ze słupkiem ruchomym. Słupek ruchomy pozwala na większe przejście po otwarciu skrzydeł. Możliwy niski próg aluminiowy.",
+    "char_count": 150
+  },
+  {
+    "id": "kolory_drzwi",
+    "title": "Kolory drzwi",
+    "content": "2) Drzwi\nDrzwi pełne: nacisk na bezpieczeństwo i izolację. Różne klasy odporności, warianty akustyczne i przeciwpożarowe.",
+    "char_count": 121
+  },
+  {
+    "id": "drzwi",
+    "title": "Drzwi",
+    "content": "Drzwi przeszklone: bogate wzornictwo, doświetlenie wnętrza. Idealne do domów.",
+    "char_count": 77
+  },
+  {
+    "id": "kolory_rolety",
+    "title": "Kolory rolet",
+    "content": "Elementy konfiguracji: modele, kolory, aplikacje, naświetla, pochwyty, klamki, ościeżnice.",
+    "char_count": 90
+  },
+  {
+    "id": "zaluzje",
+    "title": "Żaluzje fasadowe",
+    "content": "3) Rolety zewnętrzne i żaluzje fasadowe\nRolety podtynkowe: estetycznie znikają w elewacji. Możliwość moskitiery. Sterowanie ręczne lub elektryczne.",
+    "char_count": 147
+  },
+  {
+    "id": "rolety",
+    "title": "Rolety zewnętrzne",
+    "content": "Rolety nadstawne: System Opoterm. Dodatkowe docieplenie skrzynki. Możliwość systemu Moskito.\nŻaluzje fasadowe: regulacja światła, ograniczenie nagrzewania. Możliwość integracji z inteligentnym domem.",
+    "char_count": 199
+  },
+  {
+    "id": "bramy",
+    "title": "Bramy garażowe",
+    "content": "4) Bramy garażowe\nIndywidualne podejście i pomiar na miejscu montażu. Wysoka ochrona przeciwkorozyjna, dobra izolacja termiczna, różnorodna kolorystyka. Obsługa manualna lub automatyczna. 2-letnia gwarancja producenta.\n\n5) Dodatki okienne",
+    "char_count": 238
+  },
+  {
+    "id": "dodatki_okienne",
+    "title": "Dodatki okienne",
+    "content": "Swisspacer (ciepła ramka), klamka Hoppe Secustik, kryte zawiasy, szkło ornamentowe.",
+    "char_count": 83
+  },
+  {
+    "id": "montaz",
+    "title": "Montaż",
+    "content": "6) Dodatki montażowe / ciepły montaż\nSoudal Window System (SWS): montaż trójwarstwowy. Pianki, taśmy, płynne membrany. Podwaliny pod HST. Profile podokienne.",
+    "char_count": 157
+  },
+  {
+    "id": "okna_standard",
+    "title": "Okna standardowe",
+    "content": "- DECCO 82: Uw 0,76 W/m²K, 6 komór, 81 mm, 2 uszczelki",
+    "char_count": 54
+  },
+  {
+    "id": "okna_standard",
+    "title": "Okna standardowe",
+    "content": "- Ideal 7000: szersze pakiety szybowe, 3 uszczelki, parametry akustyczne zależne od pakietu",
+    "char_count": 91
+  },
+  {
+    "id": "okna_premium",
+    "title": "Okna premium",
+    "content": "- Salamander bluEVOLUTION 82: głębokość 82 mm, izolacja akustyczna 47 dB, odporność do RC2",
+    "char_count": 90
+  },
+  {
+    "id": "okna_premium",
+    "title": "Okna premium",
+    "content": "- DECCO 83: Uw 0,59 W/m²K, 7 komór, 3 uszczelki, szerokie pakiety szybowe z ciepłą ramką",
+    "char_count": 88
+  },
+  {
+    "id": "drzwi",
+    "title": "Drzwi",
+    "content": "Drzwi pełne\n- Klasy odporności RC2, RC3, RC4 (zależnie od modelu)\n- Warianty o podwyższonej izolacyjności akustycznej\n- Możliwość doboru klas EI (przeciwpożarowych)\n\nUsługi",
+    "char_count": 172
+  },
+  {
+    "id": "montaz",
+    "title": "Montaż",
+    "content": "Profesjonalny montaż\nMontaż wykonuje ekipa montażowa producenta. Realizujemy montaż do pustych otworów, wymianę starych okien, montaż na taśmach. Doświadczona kadra, profesjonalny sprzęt, kompleksowa obsługa, transport z montażem.",
+    "char_count": 230
+  },
+  {
+    "id": "doradztwo",
+    "title": "Doradztwo",
+    "content": "Doradztwo\nDoradztwo w doborze okien i rozwiązań konstrukcyjnych. Wyjaśnianie różnic PSK vs HST prostym językiem. Wsparcie informacyjne dot. programu Czyste Powietrze.",
+    "char_count": 166
+  },
+  {
+    "id": "wycena",
+    "title": "Wycena i oferta",
+    "content": "Oferta w 24h. Możliwość wysłania zapytania lub wizyty w salonie.\n\nPomiar",
+    "char_count": 72
+  },
+  {
+    "id": "montaz",
+    "title": "Montaż",
+    "content": "Pomiar umawiany w procesie sprzedaży. Przy bramach pomiar na miejscu montażu.",
+    "char_count": 77
+  },
+  {
+    "id": "kontakt",
+    "title": "Dane kontaktowe",
+    "content": "Dane kontaktowe\nAdres: Świętochłowice, ul. Chorzowska 121",
+    "char_count": 57
+  },
+  {
+    "id": "kontakt",
+    "title": "Dane kontaktowe",
+    "content": "Telefony do handlowców\nMarcin: 603 693 023\nAleksandra: 693 375 868\nKatarzyna: 721 776 555\nKatarzyna: 667 409 000\nKarina: 607 710 133\nDorota: 782 777 915",
+    "char_count": 152
+  },
+  {
+    "id": "kontakt",
+    "title": "Dane kontaktowe",
+    "content": "Godziny otwarcia salonu\nPoniedziałek – Piątek: 8:00 – 17:00\nSobota: 8:00 – 14:00\nMożliwe także inne terminy spotkań po kontakcie z handlowcami.",
+    "char_count": 143
+  },
+  {
+    "id": "social_media",
+    "title": "Social media i opinie",
+    "content": "Facebook: [Znajdziesz nas na Facebooku](https://www.facebook.com/WafamOknaPcv)\nGoogle Maps: [Zobacz opinie naszych klientów](https://www.google.com/maps/place/Wafam+Fabryka+Okien/@50.3050299,18.8892615,18z/data=!3m1!5s0x4716d2a8ee3ce311:0x390f303738ceddca!4m8!3m7!1s0x4716d2a8b8f8fb6f:0x81202c6977db6ea7!8m2!3d50.3050289!4d18.8900286!9m1!1b1!16s%2Fg%2F1tgpwykp?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D)",
+    "char_count": 413
+  },
+  {
+    "id": "social_media",
+    "title": "Social media i opinie",
+    "content": "Jak bot ma odpowiadać na pytania o opinie i social media:\n- Podawaj linki w formacie: [tekst do kliknięcia](adres url)\n- Zachęć klienta do sprawdzenia opinii samodzielnie.",
+    "char_count": 171
+  },
+  {
+    "id": "social_media",
+    "title": "Social media i opinie",
+    "content": "- Wspomnij że firma ma pozytywne opinie od klientów.\n\nDo weryfikacji",
+    "char_count": 68
+  },
+  {
+    "id": "kontakt",
+    "title": "Dane kontaktowe",
+    "content": "Telefon główny: (032) 770 50 50\n\nMini-FAQ (gotowce bota)\n\nPytanie: Czy robicie wycenę?\nOdpowiedź: Tak. Potrzebujemy rodzaju produktu, ilości, przybliżonych wymiarów i miejscowości. Zostaw telefon lub e-mail, a wrócimy z ofertą w ciągu 24h.",
+    "char_count": 239
+  },
+  {
+    "id": "kolory_rolety",
+    "title": "Kolory rolet",
+    "content": "Pytanie: Jakie macie kolory?\nOdpowiedź: Zależy od produktu. Do drzwi mamy m.in. antracyt, biały, złoty dąb i orzech, a do rolet szeroką paletę (np. biel, brąz, antracyt, dekory drewnopodobne). Napisz proszę, czy chodzi o okna, drzwi, rolety czy bramę?\n\nPytanie: Macie kolor którego nie ma na liście?\nOdpowiedź: Nie mam tego koloru w materiałach WAFAM. Powiedz proszę czy chodzi o rolety, drzwi, okna czy bramę — podpowiem najbliższe opcje lub skieruję do handlowca.",
+    "char_count": 465
+  },
+  {
+    "id": "systemy_przesuwne",
+    "title": "Systemy przesuwne",
+    "content": "Pytanie: Jaka jest różnica między PSK, Smart-Slide i HST?\nOdpowiedź: PSK to budżetowa opcja przesuwna. Smart-Slide to nowoczesne rozwiązanie z dobrą izolacją. HST to system bezprogowy do dużych przeszkleń. Podaj wymiary, a dobierzemy najlepszą opcję.",
+    "char_count": 250
+  },
+  {
+    "id": "system_tarasowy",
+    "title": "System tarasowy",
+    "content": "Pytanie: Czy macie niski próg do drzwi tarasowych?\nOdpowiedź: Tak, w systemie tarasowym można zastosować niski próg aluminiowy. Podaj miejscowość i wymiary, a przygotujemy propozycję.",
+    "char_count": 183
+  },
+  {
+    "id": "rolety",
+    "title": "Rolety zewnętrzne",
+    "content": "Pytanie: Czy do rolet można dodać moskitierę?\nOdpowiedź: Tak. Rolety podtynkowe i nadstawne mogą mieć moskitierę. Napisz czy to nowy budynek czy modernizacja, a dobierzemy odpowiedni typ.",
+    "char_count": 187
+  },
+  {
+    "id": "montaz",
+    "title": "Montaż",
+    "content": "Pytanie: Czy oferujecie montaż?\nOdpowiedź: Tak, montaż wykonuje ekipa montażowa producenta. Realizujemy też montaże na taśmach (ciepły montaż). Podaj miejscowość i zakres prac, a przygotujemy ofertę.\n\nPytanie: Który handlowiec jest najlepszy?\nOdpowiedź: Każdy z naszych handlowców chętnie pomoże i profesjonalnie doradzi. Zadzwoń do dowolnej osoby z listy.\n\nPytanie: Dlaczego WAFAM?\nOdpowiedź: Ponad 20 lat doświadczenia, własna produkcja i profesjonalna ekipa montażowa. Kompleksowa obsługa od doradztwa po montaż. Ofertę przygotowujemy w 24h. Zadzwoń lub zostaw kontakt.",
+    "char_count": 572
+  },
+  {
+    "id": "social_media",
+    "title": "Social media i opinie",
+    "content": "Pytanie: Macie Facebooka?\nOdpowiedź: Tak! [Znajdziesz nas na Facebooku](https://www.facebook.com/WafamOknaPcv). Zapraszamy do obserwowania!",
+    "char_count": 139
+  },
+  {
+    "id": "social_media",
+    "title": "Social media i opinie",
+    "content": "Pytanie: Jakie macie opinie?\nOdpowiedź: Mamy bardzo pozytywne opinie od klientów. [Zobacz sam na Google Maps](https://www.google.com/maps/place/Wafam+Fabryka+Okien/@50.3050299,18.8892615,18z/data=!3m1!5s0x4716d2a8ee3ce311:0x390f303738ceddca!4m8!3m7!1s0x4716d2a8b8f8fb6f:0x81202c6977db6ea7!8m2!3d50.3050289!4d18.8900286!9m1!1b1!16s%2Fg%2F1tgpwykp?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D) co piszą osoby, które już u nas kupowały. Chętnie dołączysz do grona zadowolonych klientów?\n\nPytanie: Czy mogę wam zaufać?\nOdpowiedź: Tak, działamy ponad 20 lat i mamy własną produkcję. [Sprawdź opinie naszych klientów na Google Maps](https://www.google.com/maps/place/Wafam+Fabryka+Okien/@50.3050299,18.8892615,18z/data=!3m1!5s0x4716d2a8ee3ce311:0x390f303738ceddca!4m8!3m7!1s0x4716d2a8b8f8fb6f:0x81202c6977db6ea7!8m2!3d50.3050289!4d18.8900286!9m1!1b1!16s%2Fg%2F1tgpwykp?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D) lub [odwiedź nas na Facebooku](https://www.facebook.com/WafamOknaPcv)\n\nŹródła (pod RAG / do aktualizacji treści)\n- https://wafam.pl/",
+    "char_count": 1055
+  },
+  {
+    "id": "parametry",
+    "title": "Parametry techniczne",
+    "content": "- https://wafam.pl/systemy-przesuwne/\n- https://wafam.pl/system-tarasowy/",
+    "char_count": 73
+  },
+  {
+    "id": "kolory_rolety",
+    "title": "Kolory rolet",
+    "content": "- https://wafam.pl/rolety-nadstawne/\n- https://wafam.pl/zaluzje-fasadowe/",
+    "char_count": 73
+  },
+  {
+    "id": "kolory_bramy",
+    "title": "Kolory bram",
+    "content": "- https://wafam.pl/bramy-garazowe/\n- https://wafam.pl/dodatki-okienne/\n- https://wafam.pl/dodatki-montazowe/",
+    "char_count": 108
+  },
+  {
+    "id": "doradztwo",
+    "title": "Doradztwo",
+    "content": "- https://wafam.pl/doradztwo/\n- https://wafam.pl/dokumenty/",
+    "char_count": 59
+  }
+]
