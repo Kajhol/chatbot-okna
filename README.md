@@ -85,6 +85,7 @@ python -m venv venv
 ### Step 3: Activate virtual environment
 Windows CMD:
 ```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 venv\Scripts\activate
 ```
 
